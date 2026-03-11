@@ -3,409 +3,245 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ══ SEO PRIMARIO ══ -->
   <title>InversorPráctico — ETFs, Fiscalidad y Brokers para el inversor español</title>
   <meta name="description" content="Guías prácticas sobre ETFs, comparativa de brokers y herramientas fiscales para el inversor español. Sin humo, solo datos." />
-  <meta name="keywords" content="ETFs España, fiscalidad ETF, mejores brokers España, invertir ETF, plusvalías IRPF, Trade Republic, DEGIRO, inversor español" />
-  <meta name="author" content="InversorPráctico" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.inversorpractico.es/" />
-
-  <!-- ══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ══ -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="InversorPráctico — ETFs, Fiscalidad y Brokers para el inversor español" />
-  <meta property="og:description" content="Guías prácticas, calculadoras fiscales y comparativas honestas de brokers. Todo lo que necesitas para invertir en ETFs desde España." />
-  <meta property="og:url" content="https://www.inversorpractico.es/" />
-  <meta property="og:site_name" content="InversorPráctico" />
-  <meta property="og:image" content="https://www.inversorpractico.es/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="es_ES" />
-
-  <!-- ══ TWITTER CARD ══ -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="InversorPráctico — ETFs sin humo" />
-  <meta name="twitter:description" content="Guías prácticas, calculadoras fiscales y comparativas honestas de brokers para el inversor español." />
-  <meta name="twitter:image" content="https://www.inversorpractico.es/og-image.png" />
-  <meta name="twitter:site" content="@inversorpractico" />
-
-  <!-- ══ SCHEMA.ORG JSON-LD ══ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "InversorPráctico",
-    "url": "https://www.inversorpractico.es",
-    "description": "Guías prácticas sobre ETFs, fiscalidad y brokers para el inversor español",
-    "publisher": {
-      "@type": "Organization",
-      "name": "InversorPráctico",
-      "url": "https://www.inversorpractico.es"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.inversorpractico.es/buscar?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Cómo declaro mis ETFs en España?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Los ETFs tributan como ganancias patrimoniales en el IRPF. El tipo varía entre el 19% y el 28% según el importe de la ganancia. Debes declararlos en la casilla 0389 de la declaración de la renta."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuál es el mejor broker para ETFs en España?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para principiantes, Trade Republic destaca por su simplicidad y comisión fija de 1€. Para inversores avanzados, Interactive Brokers ofrece el mayor catálogo y mejores condiciones profesionales."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- ══ PERFORMANCE ══ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg:        #060b09;
-      --bg2:       #0c1310;
-      --bg3:       #101a15;
-      --card:      #0e1612;
-      --card2:     #121c17;
-      --border:    rgba(52, 211, 153, 0.10);
-      --border2:   rgba(52, 211, 153, 0.18);
-      --green:     #34d399;
-      --green2:    #10b981;
-      --green3:    #059669;
-      --green-dim: rgba(52, 211, 153, 0.07);
-      --green-glow:rgba(52, 211, 153, 0.15);
-      --text:      #dff0e8;
-      --text2:     #b8d4c4;
-      --muted:     #6b8f7e;
-      --accent:    #a3e4c7;
-      --red:       #f87171;
-      --gold:      #fbbf24;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-xl: 28px;
-      --shadow:    0 4px 24px rgba(0,0,0,0.4);
-      --shadow-green: 0 0 40px rgba(52,211,153,0.12);
+      --bg: #0a0f0d;
+      --bg2: #0f1712;
+      --bg3: #141f18;
+      --card: #131a16;
+      --border: rgba(52, 211, 153, 0.12);
+      --green: #34d399;
+      --green2: #10b981;
+      --green-dim: rgba(52, 211, 153, 0.08);
+      --text: #e8f0ec;
+      --muted: #7a9488;
+      --accent: #a3e4c7;
+      --red: #f87171;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Instrument Sans', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
       overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
     }
 
-    /* ══ ANIMATED GRADIENT MESH BACKGROUND ══ */
-    .bg-mesh {
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      overflow: hidden;
-    }
-    .bg-mesh::before {
+    /* ── BACKGROUND TEXTURE ── */
+    body::before {
       content: '';
-      position: absolute;
-      width: 900px; height: 900px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(52,211,153,0.055) 0%, transparent 65%);
-      top: -300px; left: -200px;
-      animation: meshDrift1 18s ease-in-out infinite alternate;
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% -10%, rgba(52,211,153,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 110%, rgba(16,185,129,0.04) 0%, transparent 55%);
+      pointer-events: none; z-index: 0;
     }
-    .bg-mesh::after {
+
+    /* ── NOISE GRAIN ── */
+    body::after {
       content: '';
-      position: absolute;
-      width: 700px; height: 700px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 65%);
-      bottom: -200px; right: -100px;
-      animation: meshDrift2 22s ease-in-out infinite alternate;
-    }
-    @keyframes meshDrift1 {
-      from { transform: translate(0, 0) scale(1); }
-      to   { transform: translate(120px, 80px) scale(1.15); }
-    }
-    @keyframes meshDrift2 {
-      from { transform: translate(0, 0) scale(1); }
-      to   { transform: translate(-80px, -60px) scale(1.1); }
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.4; pointer-events: none; z-index: 0;
     }
 
-    /* Grain overlay */
-    .bg-grain {
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      opacity: 0.025;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      background-size: 200px;
-    }
-
-    /* ══ NAVIGATION ══ */
+    /* ── NAV ── */
     nav {
-      position: sticky; top: 0; z-index: 200;
+      position: sticky; top: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 clamp(1.25rem, 4vw, 3rem);
-      height: 60px;
-      background: rgba(6,11,9,0.80);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      padding: 0 clamp(1rem, 4vw, 3rem);
+      height: 64px;
+      background: rgba(10,15,13,0.85);
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
 
     .logo {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 800; font-size: 1.05rem;
-      color: var(--green); letter-spacing: -0.03em;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800; font-size: 1.1rem;
+      color: var(--green); letter-spacing: -0.02em;
       text-decoration: none;
-      display: flex; align-items: center; gap: 0.4rem;
     }
-    .logo-dot {
-      width: 7px; height: 7px; border-radius: 50%;
-      background: var(--green);
-      animation: pulse 2.5s ease infinite;
-    }
-    .logo span { color: var(--text2); }
+    .logo span { color: var(--text); }
 
-    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
-      font-size: 0.78rem; font-weight: 500;
+      font-size: 0.85rem; font-weight: 500;
       color: var(--muted); text-decoration: none;
-      letter-spacing: 0.04em; text-transform: uppercase;
-      padding: 0.4rem 0.75rem; border-radius: 6px;
-      transition: color 0.2s, background 0.2s;
+      letter-spacing: 0.03em; text-transform: uppercase;
+      transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--green); background: var(--green-dim); }
+    .nav-links a:hover { color: var(--green); }
 
-    .nav-cta {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      background: var(--green); color: #060b09;
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 700; font-size: 0.78rem;
-      padding: 0.55rem 1.1rem; border-radius: var(--radius-sm);
-      text-decoration: none; letter-spacing: -0.01em;
-      transition: all 0.2s;
-    }
-    .nav-cta:hover { background: #5eead4; transform: translateY(-1px); }
-
-    /* ══ HERO ══ */
+    /* ── HERO ── */
     .hero {
       position: relative; z-index: 1;
-      min-height: 92vh;
+      min-height: 88vh;
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
       text-align: center;
-      padding: clamp(4rem, 10vw, 8rem) clamp(1.25rem, 5vw, 3rem);
+      padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 5vw, 3rem);
     }
 
-    /* Subtle grid lines */
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(52,211,153,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(52,211,153,0.025) 1px, transparent 1px);
-      background-size: 64px 64px;
-      mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 80%);
-      pointer-events: none;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 0.6rem;
-      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em;
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
       text-transform: uppercase; color: var(--green);
-      border: 1px solid var(--border2);
+      border: 1px solid var(--border);
       background: var(--green-dim);
-      padding: 0.4rem 1rem; border-radius: 999px;
-      margin-bottom: 2.25rem;
-      animation: fadeUp 0.5s ease both;
+      padding: 0.35rem 0.9rem; border-radius: 999px;
+      margin-bottom: 2rem;
+      animation: fadeUp 0.6s ease both;
     }
-    .hero-eyebrow-dot {
-      width: 5px; height: 5px; border-radius: 50%;
+    .hero-tag::before {
+      content: '';
+      width: 6px; height: 6px; border-radius: 50%;
       background: var(--green);
       animation: pulse 2s ease infinite;
     }
 
     @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.35; transform: scale(0.75); }
+      50% { opacity: 0.4; transform: scale(0.8); }
     }
 
     .hero h1 {
-      font-family: 'Bricolage Grotesque', sans-serif;
+      font-family: 'Syne', sans-serif;
       font-weight: 800;
-      font-size: clamp(2.8rem, 7.5vw, 5.8rem);
-      line-height: 1.03;
-      letter-spacing: -0.04em;
-      max-width: 900px;
-      animation: fadeUp 0.55s 0.08s ease both;
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      max-width: 860px;
+      animation: fadeUp 0.6s 0.1s ease both;
     }
 
-    .hero h1 .line-accent {
+    .hero h1 em {
+      font-style: normal;
       color: var(--green);
       position: relative;
-      display: inline-block;
     }
-    .hero h1 .line-accent::after {
+
+    .hero h1 em::after {
       content: '';
-      position: absolute; bottom: 0px; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--green) 0%, rgba(52,211,153,0.2) 100%);
+      position: absolute; bottom: 2px; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--green), transparent);
       border-radius: 2px;
     }
 
     .hero-sub {
-      margin-top: 1.75rem;
-      font-size: clamp(1rem, 1.8vw, 1.15rem);
-      color: var(--muted); line-height: 1.75;
-      max-width: 520px;
-      animation: fadeUp 0.55s 0.16s ease both;
+      margin-top: 1.5rem;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--muted); line-height: 1.7;
+      max-width: 560px;
+      animation: fadeUp 0.6s 0.2s ease both;
     }
 
     .hero-ctas {
-      display: flex; gap: 0.875rem; flex-wrap: wrap;
-      justify-content: center; margin-top: 2.75rem;
-      animation: fadeUp 0.55s 0.24s ease both;
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      justify-content: center; margin-top: 2.5rem;
+      animation: fadeUp 0.6s 0.3s ease both;
     }
 
     .btn-primary {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: var(--green); color: #060b09;
-      font-family: 'Bricolage Grotesque', sans-serif;
+      background: var(--green); color: #0a0f0d;
+      font-family: 'Syne', sans-serif;
       font-weight: 700; font-size: 0.9rem;
-      padding: 0.85rem 1.9rem; border-radius: var(--radius-sm);
-      text-decoration: none; letter-spacing: -0.02em;
+      padding: 0.8rem 1.8rem; border-radius: 8px;
+      text-decoration: none; letter-spacing: -0.01em;
       transition: all 0.2s; border: none; cursor: pointer;
-      position: relative; overflow: hidden;
     }
-    .btn-primary::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(255,255,255,0.12) 0%, transparent 60%);
-    }
-    .btn-primary:hover { background: #5eead4; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(52,211,153,0.3); }
+    .btn-primary:hover { background: #5eead4; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(52,211,153,0.25); }
 
     .btn-ghost {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: transparent; color: var(--text2);
-      font-family: 'Instrument Sans', sans-serif;
-      font-weight: 500; font-size: 0.9rem;
-      padding: 0.85rem 1.9rem; border-radius: var(--radius-sm);
+      background: transparent; color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400; font-size: 0.9rem;
+      padding: 0.8rem 1.8rem; border-radius: 8px;
       text-decoration: none;
-      border: 1px solid var(--border2);
+      border: 1px solid var(--border);
       transition: all 0.2s; cursor: pointer;
     }
-    .btn-ghost:hover { border-color: var(--green); color: var(--green); background: var(--green-dim); }
+    .btn-ghost:hover { border-color: var(--green); color: var(--green); }
 
-    /* Floating badge */
-    .hero-trust {
-      display: flex; align-items: center; gap: 1.5rem;
-      margin-top: 3rem;
-      animation: fadeUp 0.55s 0.32s ease both;
-    }
-    .trust-item {
-      display: flex; align-items: center; gap: 0.5rem;
-      font-size: 0.75rem; color: var(--muted);
-    }
-    .trust-icon { color: var(--green); font-size: 0.9rem; }
-    .trust-divider { width: 1px; height: 20px; background: var(--border2); }
-
-    /* ══ STATS BAR ══ */
+    /* ── STATS BAR ── */
     .stats-bar {
       position: relative; z-index: 1;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 0;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+      background: var(--bg2);
     }
 
     .stat-item {
-      padding: 1.75rem 2rem;
+      padding: 1.5rem 3rem;
       border-right: 1px solid var(--border);
       text-align: center;
-      transition: background 0.2s;
     }
     .stat-item:last-child { border-right: none; }
-    .stat-item:hover { background: var(--green-dim); }
 
     .stat-val {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 800; font-size: 2rem;
-      color: var(--green); letter-spacing: -0.04em;
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.72rem; color: var(--muted);
-      letter-spacing: 0.04em;
-      margin-top: 0.4rem; line-height: 1.4;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800; font-size: 1.8rem;
+      color: var(--green); letter-spacing: -0.03em;
     }
 
-    /* ══ SECTIONS SHARED ══ */
+    .stat-label {
+      font-size: 0.75rem; color: var(--muted);
+      letter-spacing: 0.05em; text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+
+    /* ── SECTIONS ── */
     section { position: relative; z-index: 1; }
 
     .container {
-      max-width: 1140px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 0 clamp(1.25rem, 4vw, 3rem);
+      padding: 0 clamp(1rem, 4vw, 3rem);
     }
 
-    .section-pad { padding: 6rem 0; }
-
-    .section-header { margin-bottom: 3.5rem; }
+    .section-header {
+      margin-bottom: 3rem;
+    }
 
     .section-label {
-      font-size: 0.68rem; font-weight: 600;
-      letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--green); margin-bottom: 0.875rem;
-      display: flex; align-items: center; gap: 0.6rem;
-    }
-    .section-label::before {
-      content: '';
-      width: 18px; height: 1.5px;
-      background: var(--green);
-      border-radius: 1px;
+      font-size: 0.7rem; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--green); margin-bottom: 0.75rem;
     }
 
     .section-title {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 800;
-      font-size: clamp(1.9rem, 3.5vw, 2.75rem);
-      letter-spacing: -0.04em; line-height: 1.08;
-    }
-    .section-sub {
-      font-size: 1rem; color: var(--muted);
-      margin-top: 0.875rem; line-height: 1.75;
-      max-width: 500px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800; font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      letter-spacing: -0.03em; line-height: 1.1;
     }
 
-    /* ══ ARTICLES ══ */
+    .section-sub {
+      font-size: 1rem; color: var(--muted);
+      margin-top: 0.75rem; line-height: 1.7;
+      max-width: 520px;
+    }
+
+    /* ── ARTICLES ── */
+    .articles-section { padding: 6rem 0; }
+
     .articles-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5px;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
       overflow: hidden;
     }
 
@@ -416,511 +252,389 @@
       transition: background 0.2s;
       text-decoration: none; color: inherit;
       display: flex; flex-direction: column;
-      gap: 0;
-      position: relative;
     }
-    .article-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--green), transparent);
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .article-card:hover { background: var(--card2); }
-    .article-card:hover::before { opacity: 1; }
+    .article-card:hover { background: var(--bg3); }
 
     .article-tag {
-      font-size: 0.65rem; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase;
+      font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
       color: var(--green); margin-bottom: 1rem;
     }
 
     .article-title {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 700; font-size: 1rem;
-      line-height: 1.35; letter-spacing: -0.02em;
-      flex: 1; color: var(--text);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700; font-size: 1.05rem;
+      line-height: 1.3; letter-spacing: -0.01em;
+      flex: 1;
     }
 
     .article-meta {
-      display: flex; align-items: center; gap: 0.625rem;
+      display: flex; align-items: center; gap: 0.75rem;
       margin-top: 1.5rem;
-      font-size: 0.75rem; color: var(--muted);
+      font-size: 0.78rem; color: var(--muted);
     }
-    .article-meta-dot { width: 2.5px; height: 2.5px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
-    .article-arrow { margin-left: auto; color: var(--green); font-size: 0.9rem; transition: transform 0.2s; }
+
+    .article-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+
+    .article-arrow {
+      margin-left: auto; color: var(--green); font-size: 1rem;
+      transition: transform 0.2s;
+    }
     .article-card:hover .article-arrow { transform: translateX(4px); }
 
-    /* ══ CALCULATOR ══ */
-    .calc-section { background: var(--bg2); padding: 6rem 0; }
+    /* ── CALCULATOR ── */
+    .calc-section { padding: 6rem 0; background: var(--bg2); }
 
     .calc-wrapper {
-      display: grid; grid-template-columns: 1fr 1.1fr; gap: 4rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
       align-items: start;
     }
 
     .calc-box {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
+      border-radius: 16px;
       padding: 2.5rem;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-    .calc-box::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(90deg, var(--green), var(--green2), transparent);
     }
 
     .calc-box h3 {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 700; font-size: 1.15rem;
-      margin-bottom: 2rem; letter-spacing: -0.03em;
-      display: flex; align-items: center; gap: 0.6rem;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700; font-size: 1.2rem;
+      margin-bottom: 2rem; letter-spacing: -0.02em;
     }
 
-    .field { margin-bottom: 1.375rem; }
+    .field { margin-bottom: 1.5rem; }
     .field label {
       display: block;
-      font-size: 0.72rem; font-weight: 600;
-      color: var(--muted); letter-spacing: 0.08em;
+      font-size: 0.78rem; font-weight: 500;
+      color: var(--muted); letter-spacing: 0.05em;
       text-transform: uppercase; margin-bottom: 0.5rem;
     }
-    .field input {
+
+    .field input, .field select {
       width: 100%;
       background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
       color: var(--text);
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-size: 1.05rem; font-weight: 600;
+      font-family: 'DM Sans', sans-serif; font-size: 1rem;
       outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      transition: border-color 0.2s;
     }
-    .field input:focus {
-      border-color: var(--green);
-      box-shadow: 0 0 0 3px rgba(52,211,153,0.1);
-    }
+    .field input:focus, .field select:focus { border-color: var(--green); }
 
     .calc-result {
       background: var(--green-dim);
-      border: 1px solid var(--border2);
-      border-radius: var(--radius-md); padding: 1.5rem;
-      margin-top: 1.75rem;
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.5rem;
+      margin-top: 1.5rem;
     }
 
     .result-row {
       display: flex; justify-content: space-between; align-items: center;
-      padding: 0.625rem 0;
+      padding: 0.5rem 0;
       border-bottom: 1px solid var(--border);
-      font-size: 0.875rem;
+      font-size: 0.9rem;
     }
-    .result-row:last-child { border-bottom: none; padding-bottom: 0; }
-    .result-row .rlabel { color: var(--muted); }
-    .result-row .rval {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 700; font-size: 1rem;
-    }
-    .result-row.total .rval { color: var(--green); font-size: 1.2rem; }
-    .result-row.tax .rval { color: var(--red); }
+    .result-row:last-child { border-bottom: none; }
+    .result-row .label { color: var(--muted); }
+    .result-row .val { font-family: 'Syne', sans-serif; font-weight: 700; }
+    .result-row.total .val { color: var(--green); font-size: 1.1rem; }
+    .result-row.tax .val { color: var(--red); }
 
-    /* Info box */
-    .info-box {
-      background: var(--green-dim);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--green);
-      border-radius: var(--radius-sm);
-      padding: 1.25rem 1.5rem;
-      margin-top: 2rem;
-    }
-    .info-box strong { color: var(--accent); }
-    .info-box p { font-size: 0.82rem; color: var(--muted); line-height: 1.65; }
-
-    /* ══ BROKER TABLE ══ */
+    /* ── BROKER TABLE ── */
     .brokers-section { padding: 6rem 0; }
-
-    .broker-table-wrap {
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
 
     .broker-table {
       width: 100%;
       border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
     }
 
-    .broker-table thead tr { background: var(--bg2); }
+    .broker-table thead tr {
+      background: var(--bg2);
+    }
+
     .broker-table th {
       padding: 1rem 1.5rem;
-      font-size: 0.68rem; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.12em;
+      font-size: 0.72rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.1em;
       color: var(--muted); text-align: left;
       border-bottom: 1px solid var(--border);
-      white-space: nowrap;
     }
 
     .broker-table td {
-      padding: 1.25rem 1.5rem;
-      font-size: 0.875rem;
+      padding: 1.2rem 1.5rem;
+      font-size: 0.9rem;
       border-bottom: 1px solid var(--border);
       vertical-align: middle;
     }
+
     .broker-table tr:last-child td { border-bottom: none; }
     .broker-table tbody tr { background: var(--card); transition: background 0.15s; }
-    .broker-table tbody tr:hover { background: var(--card2); }
+    .broker-table tbody tr:hover { background: var(--bg3); }
 
     .broker-name {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-weight: 700; font-size: 0.95rem;
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1rem;
     }
-    .broker-sub { font-size: 0.72rem; color: var(--muted); margin-top: 0.2rem; }
+    .broker-sub { font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
 
     .badge {
       display: inline-block;
-      font-size: 0.65rem; font-weight: 600;
+      font-size: 0.68rem; font-weight: 500;
       letter-spacing: 0.06em; text-transform: uppercase;
-      padding: 0.25rem 0.7rem; border-radius: 999px;
-      white-space: nowrap;
+      padding: 0.25rem 0.65rem; border-radius: 999px;
     }
-    .badge-green { background: rgba(52,211,153,0.1); color: var(--green); border: 1px solid rgba(52,211,153,0.2); }
-    .badge-yellow { background: rgba(251,191,36,0.1); color: var(--gold); border: 1px solid rgba(251,191,36,0.2); }
-    .badge-red { background: rgba(248,113,113,0.08); color: var(--red); border: 1px solid rgba(248,113,113,0.2); }
+    .badge-green { background: rgba(52,211,153,0.12); color: var(--green); }
+    .badge-yellow { background: rgba(251,191,36,0.12); color: #fbbf24; }
+    .badge-red { background: rgba(248,113,113,0.1); color: var(--red); }
 
-    .stars { color: var(--green); letter-spacing: -2px; font-size: 0.85rem; }
+    .stars { color: var(--green); letter-spacing: -1px; }
 
     .btn-sm {
-      display: inline-flex; align-items: center; gap: 0.35rem;
-      background: var(--green); color: #060b09;
-      font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700;
-      font-size: 0.72rem; letter-spacing: 0.01em;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: var(--green); color: #0a0f0d;
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 0.75rem; letter-spacing: 0.01em;
       padding: 0.45rem 1rem; border-radius: 6px;
       text-decoration: none; transition: all 0.2s;
       white-space: nowrap;
     }
-    .btn-sm:hover { background: #5eead4; transform: translateY(-1px); }
+    .btn-sm:hover { background: #5eead4; }
 
-    .table-disclaimer {
-      font-size: 0.72rem; color: var(--muted);
-      margin-top: 1rem; line-height: 1.6;
-      padding: 0 0.25rem;
+    /* ── NEWSLETTER ── */
+    .newsletter-section {
+      padding: 6rem 0;
+      background: var(--bg2);
     }
-
-    /* ══ NEWSLETTER ══ */
-    .newsletter-section { padding: 6rem 0; background: var(--bg2); }
 
     .newsletter-box {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: clamp(2.5rem, 5vw, 4.5rem);
+      border-radius: 20px;
+      padding: clamp(2.5rem, 5vw, 4rem);
       text-align: center;
-      max-width: 700px; margin: 0 auto;
+      max-width: 680px; margin: 0 auto;
       position: relative; overflow: hidden;
-      box-shadow: var(--shadow-green), var(--shadow);
     }
+
     .newsletter-box::before {
       content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(90deg, transparent, var(--green), var(--green2), transparent);
-    }
-    .newsletter-box::after {
-      content: '';
-      position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
-      width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(52,211,153,0.07) 0%, transparent 65%);
+      position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(52,211,153,0.08) 0%, transparent 70%);
       pointer-events: none;
     }
 
-    .newsletter-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--green);
-      border: 1px solid var(--border2); background: var(--green-dim);
-      padding: 0.35rem 0.9rem; border-radius: 999px;
-      margin-bottom: 1.75rem;
-      position: relative; z-index: 1;
+    .newsletter-box h2 {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      letter-spacing: -0.03em; margin-bottom: 1rem;
     }
 
-    .newsletter-box h2 {
-      font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
-      letter-spacing: -0.04em; margin-bottom: 1rem;
-      position: relative; z-index: 1;
-    }
-    .newsletter-box > p {
-      color: var(--muted); font-size: 1rem; line-height: 1.7;
-      max-width: 420px; margin: 0 auto 2rem;
-      position: relative; z-index: 1;
-    }
+    .newsletter-box p { color: var(--muted); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; }
 
     .newsletter-form {
       display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;
-      position: relative; z-index: 1;
     }
+
     .newsletter-form input {
       flex: 1; min-width: 240px;
-      background: var(--bg); border: 1px solid var(--border2);
-      border-radius: var(--radius-sm); padding: 0.85rem 1.25rem;
-      color: var(--text); font-family: 'Instrument Sans', sans-serif; font-size: 0.95rem;
-      outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 8px; padding: 0.8rem 1.2rem;
+      color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+      outline: none; transition: border-color 0.2s;
     }
-    .newsletter-form input:focus {
-      border-color: var(--green);
-      box-shadow: 0 0 0 3px rgba(52,211,153,0.1);
-    }
-    .newsletter-form input::placeholder { color: var(--muted); }
+    .newsletter-form input:focus { border-color: var(--green); }
 
-    .newsletter-proof {
-      font-size: 0.72rem; color: var(--muted);
-      margin-top: 1.25rem;
-      position: relative; z-index: 1;
-    }
-
-    /* ══ FOOTER ══ */
+    /* ── FOOTER ── */
     footer {
       position: relative; z-index: 1;
       border-top: 1px solid var(--border);
-      padding: 3rem clamp(1.25rem, 4vw, 3rem);
-    }
-    .footer-top {
+      padding: 3rem clamp(1rem, 4vw, 3rem);
       display: flex; flex-wrap: wrap; gap: 2rem;
       justify-content: space-between; align-items: center;
-      margin-bottom: 2rem;
     }
 
     .footer-logo {
-      font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
+      font-family: 'Syne', sans-serif; font-weight: 800;
       font-size: 1rem; color: var(--green);
-      text-decoration: none; letter-spacing: -0.03em;
+      text-decoration: none;
     }
     .footer-logo span { color: var(--muted); }
 
     .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; }
     .footer-links a {
-      font-size: 0.78rem; color: var(--muted); text-decoration: none;
+      font-size: 0.8rem; color: var(--muted); text-decoration: none;
       transition: color 0.2s;
     }
     .footer-links a:hover { color: var(--text); }
 
     .footer-disclaimer {
-      font-size: 0.7rem; color: var(--muted);
-      line-height: 1.7;
-      padding-top: 1.75rem;
+      font-size: 0.72rem; color: var(--muted);
+      line-height: 1.6; max-width: 100%;
+      width: 100%;
+      padding-top: 1.5rem;
       border-top: 1px solid var(--border);
     }
 
-    /* ══ ANIMATIONS ══ */
+    /* ── ANIMATIONS ── */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(22px); }
+      from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
     .reveal {
-      opacity: 0; transform: translateY(22px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* Stagger children */
-    .reveal-stagger > * {
-      opacity: 0; transform: translateY(16px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .reveal-stagger.visible > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.0s; }
-    .reveal-stagger.visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.08s; }
-    .reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.16s; }
-    .reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.24s; }
-    .reveal-stagger.visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.32s; }
-    .reveal-stagger.visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.40s; }
-
-    /* ══ RESPONSIVE ══ */
-    @media (max-width: 900px) {
-      .articles-grid { grid-template-columns: repeat(2, 1fr); }
-      .calc-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
-      .stats-bar { grid-template-columns: repeat(2, 1fr); }
-      .stats-bar .stat-item:nth-child(2) { border-right: none; }
-      .stats-bar .stat-item:nth-child(3) { border-top: 1px solid var(--border); }
-      .stats-bar .stat-item:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
-    }
-
-    @media (max-width: 640px) {
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
       .nav-links { display: none; }
-      .articles-grid { grid-template-columns: 1fr; }
-      .stats-bar { grid-template-columns: repeat(2, 1fr); }
-      .hero-trust { flex-direction: column; gap: 0.75rem; }
-      .trust-divider { display: none; }
-      .broker-table { font-size: 0.78rem; }
-      .broker-table th, .broker-table td { padding: 0.9rem 0.9rem; }
-      .broker-table th:nth-child(4),
-      .broker-table td:nth-child(4) { display: none; }
+      .calc-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+      .stat-item { padding: 1.2rem 1.5rem; }
+      .broker-table { font-size: 0.8rem; }
+      .broker-table th, .broker-table td { padding: 0.9rem 1rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- BACKGROUND LAYERS -->
-  <div class="bg-mesh" aria-hidden="true"></div>
-  <div class="bg-grain" aria-hidden="true"></div>
-
-  <!-- ══ NAVIGATION ══ -->
-  <nav role="navigation" aria-label="Navegación principal">
-    <a href="#" class="logo" aria-label="InversorPráctico - inicio">
-      <div class="logo-dot" aria-hidden="true"></div>
-      Inversor<span>Práctico</span>
-    </a>
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">Inversor<span>Práctico</span></a>
     <ul class="nav-links">
       <li><a href="#articulos">Guías</a></li>
       <li><a href="#calculadora">Calculadora</a></li>
       <li><a href="#brokers">Brokers</a></li>
       <li><a href="#newsletter">Newsletter</a></li>
     </ul>
-    <a href="#newsletter" class="nav-cta">Suscribirse gratis →</a>
+    <a href="#newsletter" class="btn-primary" style="font-size:0.8rem; padding:0.6rem 1.2rem;">Suscribirse gratis</a>
   </nav>
 
-  <!-- ══ HERO ══ -->
-  <section class="hero" aria-label="Presentación">
-    <div class="hero-eyebrow">
-      <div class="hero-eyebrow-dot" aria-hidden="true"></div>
-      Para el inversor español real
-    </div>
-    <h1>
-      Invierte en ETFs.<br/>
-      Sin humo. Sin complicaciones.<br/>
-      <span class="line-accent">Con números.</span>
-    </h1>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Para el inversor español real</div>
+    <h1>Invierte en ETFs.<br/>Sin humo. Sin complicaciones.<br/><em>Con números.</em></h1>
     <p class="hero-sub">Guías prácticas, calculadoras fiscales y comparativas honestas de brokers. Todo lo que necesitas para invertir en España con cabeza.</p>
     <div class="hero-ctas">
       <a href="#articulos" class="btn-primary">Ver guías →</a>
       <a href="#calculadora" class="btn-ghost">Calculadora plusvalías</a>
     </div>
-    <div class="hero-trust" aria-label="Garantías">
-      <div class="trust-item">
-        <span class="trust-icon" aria-hidden="true">✓</span>
-        <span>Sin asesoramiento de pago</span>
-      </div>
-      <div class="trust-divider" aria-hidden="true"></div>
-      <div class="trust-item">
-        <span class="trust-icon" aria-hidden="true">✓</span>
-        <span>Datos verificados 2025</span>
-      </div>
-      <div class="trust-divider" aria-hidden="true"></div>
-      <div class="trust-item">
-        <span class="trust-icon" aria-hidden="true">✓</span>
-        <span>Escrito por profesionales del sector</span>
-      </div>
-    </div>
   </section>
 
-  <!-- ══ STATS BAR ══ -->
-  <div class="stats-bar" role="region" aria-label="Estadísticas clave">
+  <!-- STATS -->
+  <div class="stats-bar">
     <div class="stat-item">
       <div class="stat-val">+65%</div>
-      <div class="stat-label">Crecimiento inversores en ETFs España 2025</div>
+      <div class="stat-label">Inversores en ETFs España 2025</div>
     </div>
     <div class="stat-item">
       <div class="stat-val">0,05%</div>
-      <div class="stat-label">Comisión media ETF indexado global</div>
+      <div class="stat-label">Comisión media ETF indexado</div>
     </div>
     <div class="stat-item">
       <div class="stat-val">19–28%</div>
-      <div class="stat-label">Tramos fiscalidad plusvalías IRPF</div>
+      <div class="stat-label">Fiscalidad plusvalías IRPF</div>
     </div>
     <div class="stat-item">
       <div class="stat-val">+2.000</div>
-      <div class="stat-label">ETFs disponibles para inversores españoles</div>
+      <div class="stat-label">ETFs disponibles en España</div>
     </div>
   </div>
 
-  <!-- ══ ARTICLES ══ -->
-  <section class="section-pad" id="articulos" aria-labelledby="articles-title">
+  <!-- ARTICLES -->
+  <section class="articles-section" id="articulos">
     <div class="container">
       <div class="section-header reveal">
         <div class="section-label">Guías y análisis</div>
-        <h2 class="section-title" id="articles-title">Lo que necesitas saber,<br/>explicado sin rodeos</h2>
+        <h2 class="section-title">Lo que necesitas saber,<br/>explicado sin rodeos</h2>
         <p class="section-sub">Contenido escrito por alguien que trabaja en el sector. No es teoría, es lo que realmente importa.</p>
       </div>
 
-      <div class="articles-grid reveal-stagger" role="list">
-        <a href="#" class="article-card" role="listitem" aria-label="Cómo empezar a invertir en ETFs">
+      <div class="articles-grid reveal">
+        <a href="/guias/articulo-etfs-espana.html" class="article-card">
           <div class="article-tag">ETFs · Guía esencial</div>
           <div class="article-title">Cómo empezar a invertir en ETFs desde España en 2025: paso a paso</div>
           <div class="article-meta">
             <span>8 min lectura</span>
-            <div class="article-meta-dot" aria-hidden="true"></div>
+            <div class="article-meta-dot"></div>
             <span>Principiante</span>
-            <span class="article-arrow" aria-hidden="true">→</span>
+            <span class="article-arrow">→</span>
           </div>
         </a>
-        <a href="#" class="article-card" role="listitem" aria-label="Cómo declarar ETFs en la renta">
+        <a href="#" class="article-card">
           <div class="article-tag">Fiscalidad · Imprescindible</div>
           <div class="article-title">Cómo declarar tus ETFs en la Renta: guía completa para no pagar de más</div>
           <div class="article-meta">
             <span>12 min lectura</span>
-            <div class="article-meta-dot" aria-hidden="true"></div>
+            <div class="article-meta-dot"></div>
             <span>Intermedio</span>
-            <span class="article-arrow" aria-hidden="true">→</span>
+            <span class="article-arrow">→</span>
           </div>
         </a>
-        <a href="#" class="article-card" role="listitem" aria-label="Comparativa de brokers 2025">
+        <a href="#" class="article-card">
           <div class="article-tag">Brokers · Comparativa</div>
           <div class="article-title">Trade Republic vs DEGIRO vs MyInvestor: ¿cuál te conviene en 2025?</div>
           <div class="article-meta">
             <span>10 min lectura</span>
-            <div class="article-meta-dot" aria-hidden="true"></div>
+            <div class="article-meta-dot"></div>
             <span>Todos los niveles</span>
-            <span class="article-arrow" aria-hidden="true">→</span>
+            <span class="article-arrow">→</span>
           </div>
         </a>
-        <a href="#" class="article-card" role="listitem" aria-label="Cartera de ETFs para el inversor perezoso">
+        <a href="#" class="article-card">
           <div class="article-tag">Estrategia · Inversión pasiva</div>
           <div class="article-title">Cartera de ETFs para el inversor español perezoso (y eficiente)</div>
           <div class="article-meta">
             <span>9 min lectura</span>
-            <div class="article-meta-dot" aria-hidden="true"></div>
+            <div class="article-meta-dot"></div>
             <span>Intermedio</span>
-            <span class="article-arrow" aria-hidden="true">→</span>
+            <span class="article-arrow">→</span>
           </div>
         </a>
-        <a href="#" class="article-card" role="listitem" aria-label="ETF acumulación vs distribución">
+        <a href="#" class="article-card">
           <div class="article-tag">ETFs · Fiscalidad</div>
-          <div class="article-title">ETF acumulación vs distribución: qué es más eficiente para un residente en España</div>
+          <div class="article-title">ETF de acumulación vs distribución: qué es más eficiente para un residente en España</div>
           <div class="article-meta">
             <span>7 min lectura</span>
-            <div class="article-meta-dot" aria-hidden="true"></div>
+            <div class="article-meta-dot"></div>
             <span>Intermedio</span>
-            <span class="article-arrow" aria-hidden="true">→</span>
+            <span class="article-arrow">→</span>
           </div>
         </a>
-        <a href="#" class="article-card" role="listitem" aria-label="7 errores fiscales del inversor">
+        <a href="#" class="article-card">
           <div class="article-tag">Errores · Ahorra dinero</div>
           <div class="article-title">7 errores fiscales que cometen los inversores en España (y cómo evitarlos)</div>
           <div class="article-meta">
             <span>6 min lectura</span>
-            <div class="article-meta-dot" aria-hidden="true"></div>
+            <div class="article-meta-dot"></div>
             <span>Todos los niveles</span>
-            <span class="article-arrow" aria-hidden="true">→</span>
+            <span class="article-arrow">→</span>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ══ CALCULATOR ══ -->
-  <section class="calc-section" id="calculadora" aria-labelledby="calc-title">
+  <!-- CALCULATOR -->
+  <section class="calc-section" id="calculadora">
     <div class="container">
       <div class="calc-wrapper">
         <div class="reveal">
           <div class="section-label">Herramienta gratuita</div>
-          <h2 class="section-title" id="calc-title">Calcula tus plusvalías antes de vender</h2>
-          <p class="section-sub" style="margin-bottom:1.75rem;">Sabe exactamente cuánto pagarás a Hacienda antes de ejecutar la venta. Aplica los tramos del IRPF 2025 para residentes en España.</p>
-          <div class="info-box">
-            <p><strong>¿Sabías que</strong> los ETFs de acumulación difieren el pago de impuestos? Reinvierten los dividendos automáticamente y solo tributas cuando vendes. Más eficiente que un ETF de distribución para la mayoría de inversores españoles.</p>
+          <h2 class="section-title">Calcula tus plusvalías antes de vender</h2>
+          <p class="section-sub" style="margin-bottom:2rem;">Sabe exactamente cuánto pagarás a Hacienda antes de ejecutar la venta. Aplica los tramos del IRPF 2024 para residentes en España.</p>
+          <div style="background:var(--green-dim); border:1px solid var(--border); border-radius:10px; padding:1.2rem 1.5rem;">
+            <p style="font-size:0.82rem; color:var(--muted); line-height:1.6;">
+              <strong style="color:var(--accent);">¿Sabías que</strong> los ETFs de acumulación difieren el pago de impuestos? Reinvierten los dividendos automáticamente y solo tributas cuando vendes. Más eficiente que un ETF de distribución para la mayoría de inversores españoles.
+            </p>
           </div>
         </div>
 
@@ -928,38 +642,38 @@
           <h3>🧮 Calculadora de plusvalías ETF</h3>
 
           <div class="field">
-            <label for="buyPrice">Precio de compra (€/participación)</label>
-            <input type="number" id="buyPrice" placeholder="ej: 100" value="100" oninput="calcular()" min="0" step="0.01" />
+            <label>Precio de compra (€ por participación)</label>
+            <input type="number" id="buyPrice" placeholder="ej: 100" value="100" oninput="calcular()" />
           </div>
           <div class="field">
-            <label for="sellPrice">Precio de venta (€/participación)</label>
-            <input type="number" id="sellPrice" placeholder="ej: 150" value="150" oninput="calcular()" min="0" step="0.01" />
+            <label>Precio de venta (€ por participación)</label>
+            <input type="number" id="sellPrice" placeholder="ej: 150" value="150" oninput="calcular()" />
           </div>
           <div class="field">
-            <label for="numPart">Número de participaciones</label>
-            <input type="number" id="numPart" placeholder="ej: 50" value="50" oninput="calcular()" min="0" step="1" />
+            <label>Número de participaciones</label>
+            <input type="number" id="numPart" placeholder="ej: 50" value="50" oninput="calcular()" />
           </div>
           <div class="field">
-            <label for="fees">Comisiones totales (€)</label>
-            <input type="number" id="fees" placeholder="ej: 5" value="5" oninput="calcular()" min="0" step="0.01" />
+            <label>Comisiones totales (€)</label>
+            <input type="number" id="fees" placeholder="ej: 5" value="5" oninput="calcular()" />
           </div>
 
-          <div class="calc-result" id="resultado" role="region" aria-live="polite" aria-label="Resultado del cálculo">
+          <div class="calc-result" id="resultado">
             <div class="result-row">
-              <span class="rlabel">Ganancia bruta</span>
-              <span class="rval" id="r-bruta">—</span>
+              <span class="label">Ganancia bruta</span>
+              <span class="val" id="r-bruta">—</span>
             </div>
             <div class="result-row">
-              <span class="rlabel">Base imponible (tras comisiones)</span>
-              <span class="rval" id="r-base">—</span>
+              <span class="label">Base imponible (tras comisiones)</span>
+              <span class="val" id="r-base">—</span>
             </div>
             <div class="result-row tax">
-              <span class="rlabel">Impuestos a pagar (IRPF)</span>
-              <span class="rval" id="r-tax">—</span>
+              <span class="label">Impuestos a pagar (IRPF)</span>
+              <span class="val" id="r-tax">—</span>
             </div>
             <div class="result-row total">
-              <span class="rlabel">Ganancia neta real</span>
-              <span class="rval" id="r-neta">—</span>
+              <span class="label">Ganancia neta real</span>
+              <span class="val" id="r-neta">—</span>
             </div>
           </div>
         </div>
@@ -967,162 +681,152 @@
     </div>
   </section>
 
-  <!-- ══ BROKERS ══ -->
-  <section class="brokers-section" id="brokers" aria-labelledby="brokers-title">
+  <!-- BROKERS -->
+  <section class="brokers-section" id="brokers">
     <div class="container">
       <div class="section-header reveal">
         <div class="section-label">Comparativa actualizada 2025</div>
-        <h2 class="section-title" id="brokers-title">¿Qué broker elegir para ETFs?</h2>
+        <h2 class="section-title">¿Qué broker elegir para ETFs?</h2>
         <p class="section-sub">Comparativa honesta con comisiones reales. Sin publicidad encubierta — solo datos.</p>
       </div>
 
       <div class="reveal">
-        <div class="broker-table-wrap">
-          <table class="broker-table" role="table" aria-label="Comparativa de brokers de ETFs en España">
-            <thead>
-              <tr>
-                <th scope="col">Broker</th>
-                <th scope="col">Comisión ETF</th>
-                <th scope="col">Custodia</th>
-                <th scope="col">ETFs disponibles</th>
-                <th scope="col">Ideal para</th>
-                <th scope="col">Valoración</th>
-                <th scope="col"><span class="sr-only">Acción</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="broker-name">Trade Republic</div>
-                  <div class="broker-sub">Broker alemán, IBAN español</div>
-                </td>
-                <td><span class="badge badge-green">1€ fijo</span></td>
-                <td><span class="badge badge-green">Gratis</span></td>
-                <td>+2.000</td>
-                <td>Principiante / DCA</td>
-                <td><span class="stars" aria-label="5 de 5 estrellas">★★★★★</span></td>
-                <td><a href="#" class="btn-sm" rel="nofollow sponsored">Abrir cuenta →</a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="broker-name">DEGIRO</div>
-                  <div class="broker-sub">Broker holandés, muy popular</div>
-                </td>
-                <td><span class="badge badge-green">Desde 2€</span></td>
-                <td><span class="badge badge-yellow">0,25% anual</span></td>
-                <td>+3.000</td>
-                <td>Operativa frecuente</td>
-                <td><span class="stars" aria-label="4 de 5 estrellas">★★★★☆</span></td>
-                <td><a href="#" class="btn-sm" rel="nofollow sponsored">Abrir cuenta →</a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="broker-name">MyInvestor</div>
-                  <div class="broker-sub">Neobanco español, regulado CNMV</div>
-                </td>
-                <td><span class="badge badge-yellow">0,12% (mín. 2€)</span></td>
-                <td><span class="badge badge-green">Gratis</span></td>
-                <td>+1.300</td>
-                <td>Inversor español conservador</td>
-                <td><span class="stars" aria-label="4 de 5 estrellas">★★★★☆</span></td>
-                <td><a href="#" class="btn-sm" rel="nofollow sponsored">Abrir cuenta →</a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="broker-name">Interactive Brokers</div>
-                  <div class="broker-sub">El broker profesional por excelencia</div>
-                </td>
-                <td><span class="badge badge-green">Desde 3€</span></td>
-                <td><span class="badge badge-green">Gratis</span></td>
-                <td>+7.000</td>
-                <td>Inversor avanzado</td>
-                <td><span class="stars" aria-label="5 de 5 estrellas">★★★★★</span></td>
-                <td><a href="#" class="btn-sm" rel="nofollow sponsored">Abrir cuenta →</a></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="broker-name">XTB</div>
-                  <div class="broker-sub">Broker polaco con oficina en España</div>
-                </td>
-                <td><span class="badge badge-green">0% hasta 100k€/mes</span></td>
-                <td><span class="badge badge-green">Gratis</span></td>
-                <td>+370</td>
-                <td>Principiante activo</td>
-                <td><span class="stars" aria-label="4 de 5 estrellas">★★★★☆</span></td>
-                <td><a href="#" class="btn-sm" rel="nofollow sponsored">Abrir cuenta →</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-disclaimer">* Los enlaces son de afiliado. Si abres cuenta, recibimos una comisión sin coste para ti. Esto nos permite mantener el contenido gratuito.</p>
+        <table class="broker-table">
+          <thead>
+            <tr>
+              <th>Broker</th>
+              <th>Comisión ETF</th>
+              <th>Custodia</th>
+              <th>ETFs disponibles</th>
+              <th>Ideal para</th>
+              <th>Valoración</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="broker-name">Trade Republic</div>
+                <div class="broker-sub">Broker alemán, IBAN español</div>
+              </td>
+              <td><span class="badge badge-green">1€ fijo</span></td>
+              <td><span class="badge badge-green">Gratis</span></td>
+              <td>+2.000</td>
+              <td>Principiante / DCA</td>
+              <td><span class="stars">★★★★★</span></td>
+              <td><a href="#" class="btn-sm">Abrir cuenta →</a></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="broker-name">DEGIRO</div>
+                <div class="broker-sub">Broker holandés, muy popular</div>
+              </td>
+              <td><span class="badge badge-green">Desde 2€</span></td>
+              <td><span class="badge badge-yellow">0,25% anual</span></td>
+              <td>+3.000</td>
+              <td>Operativa frecuente</td>
+              <td><span class="stars">★★★★☆</span></td>
+              <td><a href="#" class="btn-sm">Abrir cuenta →</a></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="broker-name">MyInvestor</div>
+                <div class="broker-sub">Neobanco español, regulado CNMV</div>
+              </td>
+              <td><span class="badge badge-yellow">0,12% (mín. 2€)</span></td>
+              <td><span class="badge badge-green">Gratis</span></td>
+              <td>+1.300</td>
+              <td>Inversor español conservador</td>
+              <td><span class="stars">★★★★☆</span></td>
+              <td><a href="#" class="btn-sm">Abrir cuenta →</a></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="broker-name">Interactive Brokers</div>
+                <div class="broker-sub">El broker profesional por excelencia</div>
+              </td>
+              <td><span class="badge badge-green">Desde 3€</span></td>
+              <td><span class="badge badge-green">Gratis</span></td>
+              <td>+7.000</td>
+              <td>Inversor avanzado</td>
+              <td><span class="stars">★★★★★</span></td>
+              <td><a href="#" class="btn-sm">Abrir cuenta →</a></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="broker-name">XTB</div>
+                <div class="broker-sub">Broker polaco con oficina en España</div>
+              </td>
+              <td><span class="badge badge-green">0% hasta 100k€/mes</span></td>
+              <td><span class="badge badge-green">Gratis</span></td>
+              <td>+370</td>
+              <td>Principiante activo</td>
+              <td><span class="stars">★★★★☆</span></td>
+              <td><a href="#" class="btn-sm">Abrir cuenta →</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.75rem; color:var(--muted); margin-top:1rem;">* Los enlaces son de afiliado. Si abres cuenta, recibimos una comisión sin coste para ti. Esto nos permite mantener el contenido gratuito.</p>
       </div>
     </div>
   </section>
 
-  <!-- ══ NEWSLETTER ══ -->
-  <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-title">
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section" id="newsletter">
     <div class="container">
       <div class="newsletter-box reveal">
-        <div class="newsletter-badge">📬 Newsletter semanal</div>
-        <h2 id="newsletter-title">Finanzas útiles,<br/>una vez a la semana</h2>
+        <div class="hero-tag" style="margin:0 auto 1.5rem;">📬 Newsletter semanal</div>
+        <h2>Finanzas útiles,<br/>una vez a la semana</h2>
         <p>Cada domingo: una idea accionable sobre ETFs, fiscalidad o brokers. Sin spam, sin rollos. Solo lo que sirve.</p>
-        <div class="newsletter-form" role="form" aria-label="Formulario de suscripción">
-          <input type="email" placeholder="tu@email.com" aria-label="Tu dirección de correo electrónico" autocomplete="email" />
-          <button class="btn-primary" onclick="handleSubscribe(this)" type="button">Apuntarme gratis</button>
+        <div class="newsletter-form">
+          <input type="email" placeholder="tu@email.com" />
+          <button class="btn-primary" onclick="this.textContent='✓ Apuntado'">Apuntarme gratis</button>
         </div>
-        <p class="newsletter-proof">+1.200 inversores ya suscritos · Baja cuando quieras</p>
+        <p style="font-size:0.72rem; color:var(--muted); margin-top:1rem;">+1.200 inversores ya suscritos. Baja cuando quieras.</p>
       </div>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
-  <footer role="contentinfo">
-    <div class="footer-top">
-      <a href="#" class="footer-logo">Inversor<span>Práctico</span></a>
-      <nav class="footer-links" aria-label="Navegación del pie de página">
-        <a href="#">Sobre nosotros</a>
-        <a href="#">Política de afiliados</a>
-        <a href="#">Aviso legal</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Contacto</a>
-      </nav>
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="footer-logo">Inversor<span>Práctico</span></a>
+    <div class="footer-links">
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Política de afiliados</a>
+      <a href="#">Aviso legal</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
     </div>
     <p class="footer-disclaimer">
-      InversorPráctico es un sitio de educación financiera. El contenido es meramente informativo y no constituye asesoramiento financiero regulado. Invierte siempre con responsabilidad y consulta a un profesional si lo necesitas. Algunos enlaces son de afiliado — esto no influye en nuestras opiniones ni análisis.
+      InversorPráctico es un sitio de educación financiera. El contenido es meramente informativo y no constituye asesoramiento financiero. Invierte siempre con responsabilidad y consulta a un profesional si lo necesitas. Algunos enlaces son de afiliado — esto no influye en nuestras opiniones.
     </p>
   </footer>
 
   <script>
-    // ══ SCROLL REVEAL ══
+    // ── SCROLL REVEAL ──
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
-
-    // ══ CALCULATOR ══
+    // ── CALCULATOR ──
     function calcular() {
-      const buy  = parseFloat(document.getElementById('buyPrice').value) || 0;
-      const sell = parseFloat(document.getElementById('sellPrice').value) || 0;
-      const num  = parseFloat(document.getElementById('numPart').value) || 0;
-      const fees = parseFloat(document.getElementById('fees').value) || 0;
+      const buy   = parseFloat(document.getElementById('buyPrice').value) || 0;
+      const sell  = parseFloat(document.getElementById('sellPrice').value) || 0;
+      const num   = parseFloat(document.getElementById('numPart').value) || 0;
+      const fees  = parseFloat(document.getElementById('fees').value) || 0;
 
       const bruta = (sell - buy) * num;
       const base  = bruta - fees;
 
       let tax = 0;
       if (base > 0) {
-        // Tramos IRPF 2025 ganancias patrimoniales
+        // Tramos IRPF 2024 plusvalías
         const tramos = [
-          { hasta: 6000,     tipo: 0.19 },
-          { hasta: 50000,    tipo: 0.21 },
-          { hasta: 200000,   tipo: 0.23 },
-          { hasta: 300000,   tipo: 0.27 },
+          { hasta: 6000,  tipo: 0.19 },
+          { hasta: 50000, tipo: 0.21 },
+          { hasta: 200000,tipo: 0.23 },
+          { hasta: 300000,tipo: 0.27 },
           { hasta: Infinity, tipo: 0.28 },
         ];
         let restante = base;
@@ -1138,7 +842,8 @@
       }
 
       const neta = base - tax;
-      const fmt = n => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+
+      const fmt = (n) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
 
       document.getElementById('r-bruta').textContent = fmt(bruta);
       document.getElementById('r-base').textContent  = fmt(base);
@@ -1147,39 +852,7 @@
       document.getElementById('r-neta').style.color  = neta >= 0 ? 'var(--green)' : 'var(--red)';
     }
 
-    calcular();
-
-    // ══ NEWSLETTER ══
-    function handleSubscribe(btn) {
-      const input = btn.previousElementSibling;
-      const email = input.value.trim();
-      if (!email || !email.includes('@')) {
-        input.style.borderColor = 'var(--red)';
-        input.focus();
-        setTimeout(() => input.style.borderColor = '', 1500);
-        return;
-      }
-      btn.textContent = '✓ ¡Apuntado!';
-      btn.style.background = '#059669';
-      btn.disabled = true;
-      input.disabled = true;
-    }
-
-    // ══ NAV ACTIVE STATE ══
-    const sections = document.querySelectorAll('section[id], div[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    const navObserver = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          navLinks.forEach(a => a.style.color = '');
-          const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
-          if (active) active.style.color = 'var(--green)';
-        }
-      });
-    }, { threshold: 0.5 });
-
-    sections.forEach(s => navObserver.observe(s));
+    calcular(); // run on load
   </script>
 </body>
 </html>
