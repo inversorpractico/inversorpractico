@@ -123,6 +123,7 @@
       grid-template-columns: 1fr 300px;
       gap: 4rem;
       align-items: start;
+      isolation: isolate;
     }
 
     /* ARTICLE */
@@ -165,6 +166,9 @@
       border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 3rem;
+      position: relative;
+      z-index: 1;
+      clear: both;
     }
     .toc-title {
       font-family: 'Bricolage Grotesque', sans-serif;
@@ -172,7 +176,7 @@
       letter-spacing: 0.08em; text-transform: uppercase;
       color: var(--green); margin-bottom: 1rem;
     }
-    .toc ol { padding-left: 1.25rem; }
+    .toc ol { padding-left: 1.25rem; position: relative; z-index: 1; }
     .toc li { margin-bottom: 0.5rem; }
     .toc a {
       color: var(--text2); text-decoration: none; font-size: 0.9rem;
@@ -320,6 +324,8 @@
     /* SIDEBAR */
     aside {
       position: sticky; top: 80px;
+      align-self: start;
+      z-index: 1;
     }
 
     .sidebar-card {
