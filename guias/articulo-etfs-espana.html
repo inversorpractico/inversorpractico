@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Cómo invertir en ETFs desde España en 2025: guía paso a paso para principiantes</title>
+  <meta name="description" content="Guía completa para empezar a invertir en ETFs desde España en 2025. Qué ETFs elegir, qué broker usar, cómo declararlo en la renta y los errores que debes evitar." />
+  <meta name="author" content="InversorPráctico" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.inversorpractico.es/guias/como-invertir-en-etfs-espana/" />
+
+  <!-- OG -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cómo invertir en ETFs desde España en 2025: guía paso a paso" />
+  <meta property="og:description" content="Todo lo que necesitas para empezar a invertir en ETFs desde España: broker, fiscalidad, qué comprar y cómo declararlo." />
+  <meta property="og:url" content="https://www.inversorpractico.es/guias/como-invertir-en-etfs-espana/" />
+  <meta property="og:site_name" content="InversorPráctico" />
+  <meta property="article:published_time" content="2025-03-11" />
+  <meta property="article:section" content="ETFs" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo invertir en ETFs desde España en 2025: guía paso a paso para principiantes",
+    "description": "Guía completa para empezar a invertir en ETFs desde España en 2025.",
+    "author": { "@type": "Organization", "name": "InversorPráctico" },
+    "publisher": { "@type": "Organization", "name": "InversorPráctico", "url": "https://www.inversorpractico.es" },
+    "datePublished": "2025-03-11",
+    "dateModified": "2025-03-11",
+    "url": "https://www.inversorpractico.es/guias/como-invertir-en-etfs-espana/",
+    "inLanguage": "es-ES"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #060b09;
+      --bg2:       #0c1310;
+      --card:      #0e1612;
+      --border:    rgba(52, 211, 153, 0.10);
+      --border2:   rgba(52, 211, 153, 0.18);
+      --green:     #34d399;
+      --green2:    #10b981;
+      --green-dim: rgba(52, 211, 153, 0.07);
+      --text:      #dff0e8;
+      --text2:     #b8d4c4;
+      --muted:     #6b8f7e;
+      --accent:    #a3e4c7;
+      --red:       #f87171;
+      --gold:      #fbbf24;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Instrument Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.75;
+    }
+
+    /* BG */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 70% 50% at 15% 0%, rgba(52,211,153,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 85% 100%, rgba(16,185,129,0.03) 0%, transparent 55%);
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(1.25rem, 4vw, 3rem);
+      height: 60px;
+      background: rgba(6,11,9,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800; font-size: 1.05rem;
+      color: var(--green); letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+    .logo span { color: var(--text2); }
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.78rem; font-weight: 500; color: var(--muted);
+      text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 0.4rem 0.75rem; border-radius: 6px; transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover { color: var(--green); background: var(--green-dim); }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: var(--green); color: #060b09;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 0.78rem;
+      padding: 0.55rem 1.1rem; border-radius: 8px;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .nav-cta:hover { background: #5eead4; }
+
+    /* LAYOUT */
+    .page-wrapper {
+      position: relative; z-index: 1;
+      max-width: 1200px; margin: 0 auto;
+      padding: 4rem clamp(1.25rem, 4vw, 3rem);
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* ARTICLE */
+    article { min-width: 0; }
+
+    .article-meta-top {
+      display: flex; align-items: center; gap: 0.75rem;
+      margin-bottom: 1.75rem; flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--green);
+      background: var(--green-dim); border: 1px solid var(--border2);
+      padding: 0.25rem 0.7rem; border-radius: 999px;
+    }
+    .meta-text { font-size: 0.78rem; color: var(--muted); }
+    .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+
+    h1 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08; letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+    }
+    h1 em { font-style: normal; color: var(--green); }
+
+    .article-intro {
+      font-size: 1.15rem; color: var(--text2); line-height: 1.75;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .toc-title {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 0.85rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--green); margin-bottom: 1rem;
+    }
+    .toc ol { padding-left: 1.25rem; }
+    .toc li { margin-bottom: 0.5rem; }
+    .toc a {
+      color: var(--text2); text-decoration: none; font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .toc a:hover { color: var(--green); }
+
+    /* CONTENT HEADINGS */
+    h2 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800; font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      letter-spacing: -0.03em; line-height: 1.15;
+      margin: 3rem 0 1.25rem;
+      padding-top: 1rem;
+      color: var(--text);
+    }
+    h2 .num {
+      color: var(--green); margin-right: 0.5rem;
+      font-size: 0.85em;
+    }
+
+    h3 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 1.15rem;
+      letter-spacing: -0.02em; line-height: 1.3;
+      margin: 2rem 0 0.875rem;
+      color: var(--accent);
+    }
+
+    p { margin-bottom: 1.25rem; color: var(--text2); }
+    p strong { color: var(--text); }
+
+    /* CALLOUT BOXES */
+    .callout {
+      border-radius: 12px; padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0; font-size: 0.925rem;
+    }
+    .callout-title {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 0.85rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .callout p { margin: 0; line-height: 1.6; }
+    .callout-green {
+      background: var(--green-dim);
+      border: 1px solid var(--border2);
+      border-left: 3px solid var(--green);
+    }
+    .callout-green .callout-title { color: var(--green); }
+    .callout-yellow {
+      background: rgba(251,191,36,0.06);
+      border: 1px solid rgba(251,191,36,0.15);
+      border-left: 3px solid var(--gold);
+    }
+    .callout-yellow .callout-title { color: var(--gold); }
+    .callout-red {
+      background: rgba(248,113,113,0.06);
+      border: 1px solid rgba(248,113,113,0.15);
+      border-left: 3px solid var(--red);
+    }
+    .callout-red .callout-title { color: var(--red); }
+
+    /* TABLE */
+    .table-wrap {
+      overflow-x: auto; margin: 1.75rem 0;
+      border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    thead tr { background: var(--bg2); }
+    th {
+      padding: 0.875rem 1.25rem;
+      font-size: 0.68rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--muted); text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle; color: var(--text2);
+    }
+    tr:last-child td { border-bottom: none; }
+    tbody tr { background: var(--card); transition: background 0.15s; }
+    tbody tr:hover { background: var(--bg2); }
+    td strong { color: var(--text); font-family: 'Bricolage Grotesque', sans-serif; }
+
+    .badge {
+      display: inline-block; font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.2rem 0.6rem; border-radius: 999px; white-space: nowrap;
+    }
+    .badge-green { background: rgba(52,211,153,0.1); color: var(--green); border: 1px solid rgba(52,211,153,0.2); }
+    .badge-yellow { background: rgba(251,191,36,0.1); color: var(--gold); border: 1px solid rgba(251,191,36,0.2); }
+
+    /* STEP BOXES */
+    .steps { margin: 1.75rem 0; }
+    .step {
+      display: flex; gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--green-dim); border: 1px solid var(--border2);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800; font-size: 0.9rem; color: var(--green);
+    }
+    .step-content h4 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 1rem;
+      color: var(--text); margin-bottom: 0.4rem;
+    }
+    .step-content p { margin: 0; font-size: 0.9rem; }
+
+    /* AFFILIATE CTA */
+    .broker-cta {
+      background: var(--card);
+      border: 1px solid var(--border2);
+      border-radius: 14px; padding: 1.5rem;
+      margin: 1.75rem 0;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .broker-cta-info strong {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 1.05rem; color: var(--text);
+      display: block; margin-bottom: 0.3rem;
+    }
+    .broker-cta-info span { font-size: 0.85rem; color: var(--muted); }
+    .btn-affiliate {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: var(--green); color: #060b09;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 0.85rem;
+      padding: 0.65rem 1.4rem; border-radius: 8px;
+      text-decoration: none; transition: all 0.2s; white-space: nowrap;
+    }
+    .btn-affiliate:hover { background: #5eead4; transform: translateY(-1px); }
+
+    /* SIDEBAR */
+    aside {
+      position: sticky; top: 80px;
+    }
+
+    .sidebar-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card h4 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 0.9rem;
+      color: var(--text); margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-toc { list-style: none; }
+    .sidebar-toc li { margin-bottom: 0.6rem; }
+    .sidebar-toc a {
+      font-size: 0.82rem; color: var(--muted);
+      text-decoration: none; transition: color 0.2s;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .sidebar-toc a::before {
+      content: ''; width: 4px; height: 4px; border-radius: 50%;
+      background: var(--border2); flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .sidebar-toc a:hover { color: var(--green); }
+    .sidebar-toc a:hover::before { background: var(--green); }
+
+    .newsletter-mini {
+      background: var(--green-dim);
+      border: 1px solid var(--border2);
+      border-radius: 14px; padding: 1.5rem;
+      text-align: center;
+    }
+    .newsletter-mini h4 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 1rem; color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .newsletter-mini p { font-size: 0.82rem; color: var(--muted); margin-bottom: 1rem; }
+    .newsletter-mini input {
+      width: 100%; background: var(--bg); border: 1px solid var(--border2);
+      border-radius: 8px; padding: 0.7rem 1rem;
+      color: var(--text); font-size: 0.875rem; outline: none;
+      margin-bottom: 0.625rem; transition: border-color 0.2s;
+    }
+    .newsletter-mini input:focus { border-color: var(--green); }
+    .newsletter-mini button {
+      width: 100%; background: var(--green); color: #060b09;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700; font-size: 0.85rem;
+      padding: 0.7rem; border-radius: 8px;
+      border: none; cursor: pointer; transition: background 0.2s;
+    }
+    .newsletter-mini button:hover { background: #5eead4; }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      font-size: 0.75rem; color: var(--muted);
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1rem 1.25rem;
+      margin-top: 3rem; line-height: 1.65;
+    }
+
+    /* FOOTER */
+    footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 2.5rem clamp(1.25rem, 4vw, 3rem);
+      display: flex; flex-wrap: wrap; gap: 2rem;
+      justify-content: space-between; align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
+      font-size: 1rem; color: var(--green); text-decoration: none;
+    }
+    .footer-logo span { color: var(--muted); }
+    .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.78rem; color: var(--muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--text); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .page-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
+      aside { position: static; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/index.html" class="logo">Inversor<span>Práctico</span></a>
+    <ul class="nav-links">
+      <li><a href="/index.html#articulos">Guías</a></li>
+      <li><a href="/index.html#calculadora">Calculadora</a></li>
+      <li><a href="/index.html#brokers">Brokers</a></li>
+      <li><a href="/index.html#newsletter">Newsletter</a></li>
+    </ul>
+    <a href="/index.html#newsletter" class="nav-cta">Suscribirse gratis →</a>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ARTICLE -->
+    <article>
+
+      <div class="article-meta-top">
+        <span class="tag">ETFs · Guía esencial</span>
+        <span class="meta-dot"></span>
+        <span class="meta-text">8 min lectura</span>
+        <span class="meta-dot"></span>
+        <span class="meta-text">Actualizado marzo 2025</span>
+        <span class="meta-dot"></span>
+        <span class="meta-text">Nivel: Principiante</span>
+      </div>
+
+      <h1>Cómo invertir en ETFs desde España en 2025: <em>guía paso a paso</em></h1>
+
+      <p class="article-intro">
+        Más del 65% de los inversores minoristas en España ya tienen ETFs en cartera. Y con razón: son el instrumento más eficiente, barato y transparente para invertir a largo plazo. Esta guía te explica exactamente cómo empezar, qué broker elegir, qué ETFs comprar y cómo no pagar más impuestos de los necesarios.
+      </p>
+
+      <nav class="toc" aria-label="Índice del artículo">
+        <div class="toc-title">📋 Contenido del artículo</div>
+        <ol>
+          <li><a href="#que-es">¿Qué es un ETF y por qué es tan bueno para el inversor español?</a></li>
+          <li><a href="#etf-vs-fondo">ETF vs Fondo indexado: la diferencia clave para residentes en España</a></li>
+          <li><a href="#como-empezar">Cómo empezar paso a paso</a></li>
+          <li><a href="#que-etf">¿Qué ETF comprar? Los mejores para empezar</a></li>
+          <li><a href="#broker">¿Qué broker elegir?</a></li>
+          <li><a href="#fiscalidad">Fiscalidad: cuánto vas a pagar a Hacienda</a></li>
+          <li><a href="#errores">Los 4 errores que más dinero cuestan a los principiantes</a></li>
+          <li><a href="#conclusion">Conclusión</a></li>
+        </ol>
+      </nav>
+
+      <!-- SECCIÓN 1 -->
+      <h2 id="que-es"><span class="num">01</span>¿Qué es un ETF y por qué es tan bueno?</h2>
+
+      <p>Un ETF (Exchange Traded Fund, o Fondo Cotizado en Bolsa) es exactamente lo que su nombre indica: un fondo de inversión que cotiza en bolsa como si fuera una acción. Con una sola compra puedes invertir en cientos o miles de empresas a la vez.</p>
+
+      <p>Imagina que quieres invertir en las 500 empresas más grandes de Estados Unidos. Podrías comprar acciones de Apple, Microsoft, Amazon... una por una. O podrías comprar un ETF del S&P 500 y tenerlas todas de golpe, pagando una comisión de apenas el 0,07% anual.</p>
+
+      <div class="callout callout-green">
+        <div class="callout-title">✅ Por qué los ETFs son la opción más inteligente</div>
+        <p><strong>Diversificación instantánea:</strong> Un solo ETF puede contener 1.600+ empresas de todo el mundo. Si una quiebra, apenas lo notas.<br/><br/>
+        <strong>Comisiones bajísimas:</strong> Entre 0,05% y 0,20% anual. Un fondo de gestión activa te cobra entre 1% y 2%. La diferencia a 30 años es brutal.<br/><br/>
+        <strong>Transparencia total:</strong> Sabes exactamente qué tienes en cartera en cada momento.<br/><br/>
+        <strong>Liquidez inmediata:</strong> Puedes comprar y vender durante el horario bursátil, como una acción normal.</p>
+      </div>
+
+      <!-- SECCIÓN 2 -->
+      <h2 id="etf-vs-fondo"><span class="num">02</span>ETF vs Fondo indexado: la diferencia clave para España</h2>
+
+      <p>Esta es la pregunta que nadie te explica bien, y que puede costarte dinero si no la entiendes.</p>
+
+      <p>En España, los <strong>fondos indexados tienen una ventaja fiscal que los ETFs no tienen</strong>: puedes traspasarlos a otro fondo sin pagar impuestos por las ganancias acumuladas. Con un ETF, si vendes para cambiar de uno a otro, pagas impuestos en ese momento.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>ETF</th>
+              <th>Fondo Indexado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Traspaso sin impuestos</td>
+              <td><span style="color:var(--red)">✗ No</span></td>
+              <td><span style="color:var(--green)">✓ Sí</span></td>
+            </tr>
+            <tr>
+              <td>Comisiones</td>
+              <td><span class="badge badge-green">Desde 0,05%</span></td>
+              <td><span class="badge badge-yellow">Desde 0,15%</span></td>
+            </tr>
+            <tr>
+              <td>Compra mínima</td>
+              <td>Precio de 1 participación</td>
+              <td>Desde 1€ (MyInvestor)</td>
+            </tr>
+            <tr>
+              <td>Horario de compra</td>
+              <td>Bolsa en tiempo real</td>
+              <td>Una vez al día (NAV)</td>
+            </tr>
+            <tr>
+              <td>Catálogo disponible</td>
+              <td>Muy amplio</td>
+              <td>Más limitado en España</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-yellow">
+        <div class="callout-title">⚠️ Cuándo elegir ETF y cuándo fondo indexado</div>
+        <p>Si vas a mantener tu inversión durante muchos años sin tocarla, el fondo indexado puede ser más eficiente fiscalmente en España. Si quieres más control, más variedad de activos, o inviertes en brokers como DEGIRO o Trade Republic donde los fondos indexados no están disponibles, el ETF es la opción correcta.</p>
+      </div>
+
+      <!-- SECCIÓN 3 -->
+      <h2 id="como-empezar"><span class="num">03</span>Cómo empezar: paso a paso</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Define tu perfil y horizonte temporal</h4>
+            <p>Antes de comprar nada, hazte esta pregunta: ¿cuándo necesitaré este dinero? Si es en menos de 3 años, los ETFs de renta variable no son para ti. Si es a más de 5-10 años, adelante.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Elige tu broker</h4>
+            <p>Es el intermediario a través del cual compras ETFs. Para principiantes en España, Trade Republic y XTB son los más recomendables. Te explicamos las diferencias más abajo.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Abre la cuenta y verifica tu identidad</h4>
+            <p>El proceso tarda entre 10 y 30 minutos. Necesitarás tu DNI y, en algunos casos, un selfie. Es un proceso 100% online.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Ingresa dinero y compra tu primer ETF</h4>
+            <p>Haz una transferencia a tu cuenta del broker, busca el ETF por su nombre o ISIN, y ejecuta la compra. En Trade Republic, por ejemplo, el proceso es idéntico a comprar en una app de móvil.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Automatiza aportaciones periódicas (DCA)</h4>
+            <p>La estrategia más eficaz para el inversor a largo plazo es invertir la misma cantidad cada mes, independientemente de si el mercado sube o baja. Se llama Dollar Cost Averaging y elimina el riesgo de comprar en el peor momento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 4 -->
+      <h2 id="que-etf"><span class="num">04</span>¿Qué ETF comprar? Los mejores para empezar</h2>
+
+      <p>No te compliques. El 90% de los inversores principiantes no necesitan más de uno o dos ETFs. Aquí tienes los más recomendados para empezar desde España:</p>
+
+      <h3>ETF #1 — Vanguard FTSE All-World UCITS ETF (VWCE)</h3>
+      <p>El ETF más popular entre inversores europeos por una razón: con uno solo tienes exposición a más de <strong>3.700 empresas de 49 países</strong>, tanto de mercados desarrollados como emergentes. Comisión anual del 0,22%. Es el punto de partida ideal.</p>
+      <p><strong>ISIN:</strong> IE00B3RBWM25 | <strong>Tipo:</strong> Acumulación | <strong>TER:</strong> 0,22%</p>
+
+      <h3>ETF #2 — iShares Core MSCI World UCITS ETF (IWDA)</h3>
+      <p>Cubre más de 1.400 empresas de 23 países desarrollados. No incluye emergentes, lo que lo hace algo menos volátil que el VWCE. Es el favorito de muchos inversores europeos. Comisión del 0,20%.</p>
+      <p><strong>ISIN:</strong> IE00B4L5Y983 | <strong>Tipo:</strong> Acumulación | <strong>TER:</strong> 0,20%</p>
+
+      <div class="callout callout-green">
+        <div class="callout-title">💡 Acumulación vs Distribución: elige bien desde el principio</div>
+        <p>Para residentes en España, los ETFs de <strong>acumulación</strong> (que reinvierten los dividendos automáticamente) son más eficientes fiscalmente. No tributas por los dividendos cada año, sino solo cuando vendes. Busca siempre la versión "Acc" o "Accumulating" del ETF.</p>
+      </div>
+
+      <!-- SECCIÓN 5 -->
+      <h2 id="broker"><span class="num">05</span>¿Qué broker elegir para comprar ETFs en España?</h2>
+
+      <p>La elección del broker es importante porque afecta a tus comisiones, la variedad de ETFs disponibles y la facilidad de uso. Aquí los mejores para el inversor español:</p>
+
+      <div class="broker-cta">
+        <div class="broker-cta-info">
+          <strong>Trade Republic — El mejor para empezar</strong>
+          <span>Comisión fija de 1€ por operación · +2.000 ETFs · App muy intuitiva · IBAN español · Regulado en Alemania</span>
+        </div>
+        <a href="#" class="btn-affiliate" rel="nofollow sponsored">Abrir cuenta gratis →</a>
+      </div>
+
+      <div class="broker-cta">
+        <div class="broker-cta-info">
+          <strong>XTB — 0% comisión hasta 100.000€/mes</strong>
+          <span>Sin comisión en ETFs hasta 100k€ al mes · Oficina en España · Regulado por CNMV · App y web muy completas</span>
+        </div>
+        <a href="#" class="btn-affiliate" rel="nofollow sponsored">Abrir cuenta gratis →</a>
+      </div>
+
+      <div class="broker-cta">
+        <div class="broker-cta-info">
+          <strong>DEGIRO — El favorito para operativa frecuente</strong>
+          <span>Desde 2€ por operación · +3.000 ETFs · Plataforma avanzada · Regulado en Holanda</span>
+        </div>
+        <a href="#" class="btn-affiliate" rel="nofollow sponsored">Abrir cuenta gratis →</a>
+      </div>
+
+      <!-- SECCIÓN 6 -->
+      <h2 id="fiscalidad"><span class="num">06</span>Fiscalidad: cuánto vas a pagar a Hacienda</h2>
+
+      <p>En España, las ganancias que obtienes al vender un ETF tributan como <strong>ganancias patrimoniales en el IRPF</strong>. Los tipos aplicables en 2025 son:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Ganancia patrimonial</th>
+              <th>Tipo IRPF</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Hasta 6.000€</td><td><strong>19%</strong></td></tr>
+            <tr><td>De 6.000€ a 50.000€</td><td><strong>21%</strong></td></tr>
+            <tr><td>De 50.000€ a 200.000€</td><td><strong>23%</strong></td></tr>
+            <tr><td>De 200.000€ a 300.000€</td><td><strong>27%</strong></td></tr>
+            <tr><td>Más de 300.000€</td><td><strong>28%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Solo tributas cuando <strong>vendes</strong>. Mientras mantienes el ETF en cartera, no pagas impuestos aunque suba de valor. Esto hace que cuanto más tiempo mantengas la inversión, más eficiente sea fiscalmente.</p>
+
+      <div class="callout callout-yellow">
+        <div class="callout-title">⚠️ Ojo con la regla de los dos meses</div>
+        <p>Si vendes un ETF con pérdidas para compensar ganancias en la declaración, no puedes comprar el mismo ETF (ni uno similar) en los 2 meses anteriores o posteriores a la venta. Si lo haces, Hacienda no te permite deducir esas pérdidas.</p>
+      </div>
+
+      <!-- SECCIÓN 7 -->
+      <h2 id="errores"><span class="num">07</span>Los 4 errores que más dinero cuestan a los principiantes</h2>
+
+      <h3>Error #1 — Intentar adivinar el mercado</h3>
+      <p>El 90% de los inversores profesionales no baten al mercado a largo plazo. Si ellos no pueden, tú tampoco. La estrategia ganadora es simple: invierte de forma regular, no intentes predecir cuándo va a subir o bajar.</p>
+
+      <h3>Error #2 — Comprar ETFs de distribución en lugar de acumulación</h3>
+      <p>Si tu broker te paga dividendos, estás tributando por ellos cada año aunque no los necesites. Elige siempre la versión de acumulación (Acc) para diferir impuestos y aprovechar el interés compuesto al máximo.</p>
+
+      <h3>Error #3 — Diversificar demasiado</h3>
+      <p>Tener 15 ETFs diferentes no es más seguro que tener uno global. El VWCE ya contiene 3.700 empresas. Añadir más ETFs encima solo complica la gestión y la declaración de la renta.</p>
+
+      <h3>Error #4 — Vender en el primer crash</h3>
+      <p>Los mercados caen. En 2020, el S&P 500 cayó un 34% en un mes. Los que vendieron con pánico perdieron dinero. Los que mantuvieron y siguieron comprando vieron cómo recuperaban todo en menos de 6 meses y luego seguían subiendo.</p>
+
+      <div class="callout callout-red">
+        <div class="callout-title">🚨 El mayor error de todos</div>
+        <p>No empezar. Cada año que esperas es un año de interés compuesto perdido. No necesitas el momento perfecto. Necesitas empezar.</p>
+      </div>
+
+      <!-- CONCLUSIÓN -->
+      <h2 id="conclusion"><span class="num">08</span>Conclusión: el plan más sencillo que funciona</h2>
+
+      <p>Si después de leer todo esto quieres un plan concreto, aquí está el más simple y probado:</p>
+
+      <ol style="padding-left:1.5rem; color:var(--text2); margin-bottom:1.25rem;">
+        <li style="margin-bottom:0.75rem;">Abre cuenta en <strong style="color:var(--text)">Trade Republic o XTB</strong></li>
+        <li style="margin-bottom:0.75rem;">Compra el ETF <strong style="color:var(--text)">VWCE (Vanguard FTSE All-World Acc)</strong></li>
+        <li style="margin-bottom:0.75rem;">Activa una aportación automática mensual con lo que puedas permitirte</li>
+        <li style="margin-bottom:0.75rem;">No mires la cartera cada día. Revísala una vez al trimestre</li>
+        <li>Declara correctamente en la renta cuando vendas</li>
+      </ol>
+
+      <p>Es aburrido. Y es exactamente por eso que funciona.</p>
+
+      <div class="disclaimer">
+        <strong>Aviso legal:</strong> Este artículo es de carácter educativo e informativo. No constituye asesoramiento financiero ni una recomendación de compra o venta de ningún producto financiero. Toda inversión conlleva riesgo de pérdida de capital. Consulta con un asesor financiero certificado antes de tomar decisiones de inversión. Algunos enlaces en este artículo son de afiliado — esto no influye en nuestras opiniones ni análisis.
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside>
+      <div class="sidebar-card">
+        <h4>📋 En este artículo</h4>
+        <ul class="sidebar-toc">
+          <li><a href="#que-es">¿Qué es un ETF?</a></li>
+          <li><a href="#etf-vs-fondo">ETF vs Fondo indexado</a></li>
+          <li><a href="#como-empezar">Cómo empezar paso a paso</a></li>
+          <li><a href="#que-etf">Qué ETF comprar</a></li>
+          <li><a href="#broker">Qué broker elegir</a></li>
+          <li><a href="#fiscalidad">Fiscalidad en España</a></li>
+          <li><a href="#errores">Errores a evitar</a></li>
+          <li><a href="#conclusion">Conclusión</a></li>
+        </ul>
+      </div>
+
+      <div class="newsletter-mini">
+        <h4>📬 Una idea cada domingo</h4>
+        <p>ETFs, fiscalidad y brokers. Sin spam. Solo lo que sirve.</p>
+        <input type="email" placeholder="tu@email.com" />
+        <button onclick="this.textContent='✓ Apuntado'">Suscribirme gratis</button>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="/index.html" class="footer-logo">Inversor<span>Práctico</span></a>
+    <nav class="footer-links">
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Política de afiliados</a>
+      <a href="#">Aviso legal</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
