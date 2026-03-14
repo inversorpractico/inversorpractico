@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mejores Brokers para Invertir en España 2025 | InversorPráctico</title>
+  <meta name="description" content="Comparativa de los mejores brokers para invertir en España en 2025: Trade Republic, DEGIRO y XTB. Comisiones, seguridad y cuál elegir según tu perfil." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #1a7a4a;
+      --verde-claro: #e8f5ee;
+      --texto: #1a1a1a;
+      --gris: #666;
+      --borde: #e0e0e0;
+      --fondo: #fafaf8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      color: var(--texto);
+      background: var(--fondo);
+      line-height: 1.75;
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--borde);
+      padding: 18px 0;
+    }
+    header .inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header a.logo {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--verde);
+      text-decoration: none;
+    }
+    nav a {
+      font-size: 0.9rem;
+      color: var(--gris);
+      text-decoration: none;
+      margin-left: 24px;
+    }
+    nav a:hover { color: var(--verde); }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* META */
+    .meta {
+      font-size: 0.85rem;
+      color: var(--gris);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .tag {
+      background: var(--verde-claro);
+      color: var(--verde);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* HEADINGS */
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin: 48px 0 16px;
+      color: #111;
+      border-left: 4px solid var(--verde);
+      padding-left: 14px;
+    }
+    h3 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 28px 0 10px;
+      color: #111;
+    }
+
+    /* INTRO */
+    .intro {
+      font-size: 1.15rem;
+      color: #333;
+      margin-bottom: 32px;
+      line-height: 1.8;
+    }
+
+    p { margin-bottom: 16px; font-size: 1rem; color: #333; }
+
+    /* RESUMEN BOX */
+    .resumen {
+      background: var(--verde-claro);
+      border-left: 4px solid var(--verde);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .resumen strong { color: var(--verde); display: block; margin-bottom: 8px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .resumen ul { padding-left: 20px; }
+    .resumen li { margin-bottom: 6px; font-size: 0.95rem; }
+
+    /* BROKER CARD */
+    .broker-card {
+      background: #fff;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 28px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .broker-card .broker-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .broker-name {
+      font-family: 'Lora', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+    .broker-badge {
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .badge-top { background: #fff3cd; color: #856404; }
+    .badge-exp { background: #d1ecf1; color: #0c5460; }
+    .badge-pro { background: #f8d7da; color: #721c24; }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0 20px;
+    }
+    @media (max-width: 600px) { .pros-cons { grid-template-columns: 1fr; } }
+
+    .pros, .cons {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .pros { border-top: 3px solid #28a745; }
+    .cons { border-top: 3px solid #dc3545; }
+    .pros strong { color: #28a745; display: block; margin-bottom: 8px; font-size: 0.85rem; }
+    .cons strong { color: #dc3545; display: block; margin-bottom: 8px; font-size: 0.85rem; }
+    .pros li, .cons li { font-size: 0.9rem; margin-bottom: 5px; list-style: none; padding-left: 0; }
+    .pros li::before { content: "✓ "; color: #28a745; font-weight: 700; }
+    .cons li::before { content: "✗ "; color: #dc3545; font-weight: 700; }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--verde);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+    .cta-btn:hover { background: #145e38; }
+
+    /* TABLA */
+    .tabla-wrap { overflow-x: auto; margin: 32px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    thead { background: var(--verde); color: #fff; }
+    th { padding: 14px 16px; text-align: left; font-weight: 600; }
+    td { padding: 13px 16px; border-bottom: 1px solid var(--borde); }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f9faf8; }
+    .check { color: #28a745; font-weight: 700; }
+    .cross { color: #dc3545; }
+
+    /* AVISO LEGAL */
+    .aviso {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 40px 0 0;
+      font-size: 0.82rem;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+      margin-top: 80px;
+    }
+    footer a { color: #aaa; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <a href="/" class="logo">InversorPráctico</a>
+    <nav>
+      <a href="/guias/">Guías</a>
+      <a href="/#brokers">Brokers</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-wrap">
+
+  <div class="meta">
+    <span class="tag">Brokers</span>
+    <span>Actualizado: marzo 2025</span>
+    <span>⏱ 8 min de lectura</span>
+  </div>
+
+  <h1>Mejores brokers para invertir en España en 2025</h1>
+
+  <p class="intro">
+    Elegir bien el broker es la primera decisión importante que toma cualquier inversor. Las comisiones que pagas hoy se restan directamente a tu rentabilidad futura. En esta guía analizo los tres brokers que más uso y recomiendo para el mercado español, con sus ventajas reales y sus limitaciones.
+  </p>
+
+  <div class="resumen">
+    <strong>Lo más importante</strong>
+    <ul>
+      <li><strong>Trade Republic</strong> — el mejor para empezar: sin comisiones y muy fácil de usar.</li>
+      <li><strong>DEGIRO</strong> — excelente para inversores con más experiencia que quieren más mercados.</li>
+      <li><strong>XTB</strong> — buena opción si también quieres operar con CFDs o divisas.</li>
+    </ul>
+  </div>
+
+  <h2>¿Por qué importa tanto elegir el broker correcto?</h2>
+
+  <p>
+    La mayoría de inversores principiantes se centran en qué activos comprar y olvidan algo igual de importante: cuánto les cuesta comprarlos. Una comisión de 5€ por operación puede parecer pequeña, pero si inviertes 100€ al mes, estás perdiendo el 5% antes de que tu inversión empiece a trabajar.
+  </p>
+  <p>
+    En España tenemos acceso a brokers europeos regulados con comisiones muy bajas. No hay excusa para seguir usando el banco de toda la vida para invertir — los bancos tradicionales cobran entre 10 y 25€ por operación, mientras que los brokers modernos cobran cero o casi cero.
+  </p>
+
+  <h2>Criterios que he usado para esta comparativa</h2>
+  <p>He analizado cada broker según estos factores:</p>
+  <ul style="padding-left:20px; margin-bottom:16px;">
+    <li style="margin-bottom:8px;"><strong>Comisiones reales</strong> — lo que pagas por comprar y vender</li>
+    <li style="margin-bottom:8px;"><strong>Regulación y seguridad</strong> — si tu dinero está protegido</li>
+    <li style="margin-bottom:8px;"><strong>Facilidad de uso</strong> — importante si estás empezando</li>
+    <li style="margin-bottom:8px;"><strong>Variedad de productos</strong> — ETFs, acciones, fondos</li>
+    <li style="margin-bottom:8px;"><strong>Atención al cliente en español</strong></li>
+  </ul>
+
+  <h2>Los 3 mejores brokers para españoles en 2025</h2>
+
+  <!-- TRADE REPUBLIC -->
+  <div class="broker-card">
+    <div class="broker-header">
+      <span class="broker-name">🟢 Trade Republic</span>
+      <span class="broker-badge badge-top">⭐ Mejor para empezar</span>
+    </div>
+    <p>Trade Republic es el broker que más ha crecido en España en los últimos años, y con razón. Su propuesta es sencilla: <strong>0 comisiones</strong> en acciones y ETFs, con solo 1€ de coste externo por operación. La app es la más intuitiva del mercado y permite empezar a invertir desde 1€.</p>
+    <p>Además, desde 2023 ofrece una <strong>cuenta remunerada al 4%</strong> sobre el efectivo que no tienes invertido — algo que ningún banco español iguala en condiciones.</p>
+    <p>Está regulado por el BaFin alemán y los fondos están protegidos hasta 100.000€ por el Fondo de Garantía de Depósitos alemán.</p>
+
+    <div class="pros-cons">
+      <ul class="pros">
+        <strong>✓ Ventajas</strong>
+        <li>Sin comisiones en acciones y ETFs</li>
+        <li>App muy fácil de usar</li>
+        <li>Planes de ahorro automáticos desde 1€</li>
+        <li>Cuenta remunerada al 4%</li>
+        <li>Regulado en Alemania (BaFin)</li>
+      </ul>
+      <ul class="cons">
+        <strong>✗ Limitaciones</strong>
+        <li>Solo disponible en móvil (no web)</li>
+        <li>Menos variedad de mercados que DEGIRO</li>
+        <li>Sin acceso a fondos de inversión tradicionales</li>
+        <li>Atención al cliente solo por chat</li>
+      </ul>
+    </div>
+
+    <a href="https://refnolink.traderepublic.com" class="cta-btn" target="_blank" rel="nofollow noopener">Abrir cuenta en Trade Republic →</a>
+    <p style="font-size:0.8rem; color:#999; margin-top:8px;">* Enlace de afiliado. No tiene coste adicional para ti.</p>
+  </div>
+
+  <!-- DEGIRO -->
+  <div class="broker-card">
+    <div class="broker-header">
+      <span class="broker-name">🔵 DEGIRO</span>
+      <span class="broker-badge badge-exp">Para inversores con experiencia</span>
+    </div>
+    <p>DEGIRO es el broker que yo uso personalmente. Es holandés, lleva más de 10 años en España y tiene una de las ofertas de productos más amplias del mercado: acceso a más de 50 bolsas en 30 países. Las comisiones son muy bajas aunque no llegan a cero como Trade Republic.</p>
+    <p>Lo recomiendo especialmente para inversores que ya tienen claro lo que quieren hacer y buscan acceso a mercados internacionales o productos más específicos.</p>
+
+    <div class="pros-cons">
+      <ul class="pros">
+        <strong>✓ Ventajas</strong>
+        <li>Acceso a más de 50 bolsas mundiales</li>
+        <li>Comisiones muy bajas</li>
+        <li>Disponible en web y app</li>
+        <li>Regulado por AFM (Países Bajos)</li>
+        <li>Amplia variedad de ETFs y acciones</li>
+      </ul>
+      <ul class="cons">
+        <strong>✗ Limitaciones</strong>
+        <li>Interfaz menos intuitiva que Trade Republic</li>
+        <li>Sin cuenta remunerada</li>
+        <li>Comisión de conectividad anual (2,50€/mes)</li>
+        <li>Curva de aprendizaje algo mayor</li>
+      </ul>
+    </div>
+
+    <a href="https://www.degiro.es/amigo-invita-amigo" class="cta-btn" target="_blank" rel="nofollow noopener">Abrir cuenta en DEGIRO →</a>
+    <p style="font-size:0.8rem; color:#999; margin-top:8px;">* Enlace de afiliado. No tiene coste adicional para ti.</p>
+  </div>
+
+  <!-- XTB -->
+  <div class="broker-card">
+    <div class="broker-header">
+      <span class="broker-name">🟡 XTB</span>
+      <span class="broker-badge badge-pro">Para traders activos</span>
+    </div>
+    <p>XTB es un broker polaco cotizado en bolsa, con fuerte presencia en España. Su plataforma xStation es una de las más potentes del mercado y permite operar con acciones, ETFs y también CFDs. Es una buena opción si además de invertir a largo plazo quieres tener acceso a productos más avanzados.</p>
+    <p>Hasta 100.000€ de volumen mensual no cobra comisiones en acciones y ETFs — a partir de ahí aplica un 0,2% mínimo 10€. Para inversores habituales que no superan ese volumen, es totalmente gratuito.</p>
+
+    <div class="pros-cons">
+      <ul class="pros">
+        <strong>✓ Ventajas</strong>
+        <li>Sin comisiones hasta 100.000€/mes</li>
+        <li>Plataforma xStation muy completa</li>
+        <li>Atención al cliente en español</li>
+        <li>Acceso a CFDs y divisas</li>
+        <li>Cotizado en bolsa (transparencia)</li>
+      </ul>
+      <ul class="cons">
+        <strong>✗ Limitaciones</strong>
+        <li>Comisiones si superas 100.000€/mes</li>
+        <li>Plataforma más compleja para principiantes</li>
+        <li>Los CFDs conllevan riesgo elevado</li>
+      </ul>
+    </div>
+
+    <a href="https://www.xtb.com/es" class="cta-btn" target="_blank" rel="nofollow noopener">Abrir cuenta en XTB →</a>
+    <p style="font-size:0.8rem; color:#999; margin-top:8px;">* Enlace de afiliado. No tiene coste adicional para ti.</p>
+  </div>
+
+  <h2>Comparativa rápida</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Broker</th>
+          <th>Comisiones ETFs</th>
+          <th>App móvil</th>
+          <th>Cuenta remunerada</th>
+          <th>Ideal para</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Trade Republic</strong></td>
+          <td>0€ + 1€ externo</td>
+          <td class="check">✓ Excelente</td>
+          <td class="check">✓ 4% TAE</td>
+          <td>Principiantes</td>
+        </tr>
+        <tr>
+          <td><strong>DEGIRO</strong></td>
+          <td>Desde 1€</td>
+          <td class="check">✓ Buena</td>
+          <td class="cross">✗ No</td>
+          <td>Inversores medios</td>
+        </tr>
+        <tr>
+          <td><strong>XTB</strong></td>
+          <td>0€ hasta 100k/mes</td>
+          <td class="check">✓ Buena</td>
+          <td class="cross">✗ No</td>
+          <td>Traders activos</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>¿Cuál te recomiendo según tu situación?</h2>
+
+  <h3>Si estás empezando y no has invertido nunca</h3>
+  <p>Sin duda <strong>Trade Republic</strong>. La app es tan sencilla que puedes hacer tu primera inversión en menos de 10 minutos. Además, la cuenta remunerada al 4% te permite acumular dinero mientras decides qué hacer con él.</p>
+
+  <h3>Si ya tienes algo de experiencia y quieres más opciones</h3>
+  <p><strong>DEGIRO</strong> es mi recomendación personal. Lo llevo usando varios años y la variedad de mercados y ETFs disponibles es difícil de igualar. Las comisiones son bajas y la plataforma web es bastante completa.</p>
+
+  <h3>Si quieres operar activamente o con productos avanzados</h3>
+  <p><strong>XTB</strong> con su plataforma xStation es la mejor opción. Eso sí, si vas a operar con CFDs ten en cuenta que son productos de alto riesgo y la mayoría de inversores particulares pierden dinero con ellos.</p>
+
+  <h2>Conclusión</h2>
+  <p>
+    Los tres brokers son seguros, están regulados y son una alternativa infinitamente mejor que el banco tradicional para invertir. La elección depende de tu nivel y objetivos: <strong>Trade Republic para empezar, DEGIRO para crecer, XTB para operar</strong>.
+  </p>
+  <p>
+    Si tienes dudas sobre cuál elegir, empieza con Trade Republic. No tiene coste abrir la cuenta y puedes transferir tus posiciones a otro broker más adelante si cambias de necesidades.
+  </p>
+
+  <div class="aviso">
+    <strong>Aviso legal:</strong> Este artículo contiene enlaces de afiliado. Si abres una cuenta a través de ellos, InversorPráctico recibe una comisión sin coste adicional para ti. Invertir conlleva riesgo de pérdida de capital. Este contenido es informativo y no constituye asesoramiento financiero. Consulta siempre con un asesor financiero antes de tomar decisiones de inversión.
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 InversorPráctico · <a href="/aviso-legal.html">Aviso legal</a> · <a href="/politica-privacidad.html">Privacidad</a></p>
+  <p style="margin-top:8px;">Contenido educativo sobre finanzas personales e inversión para el mercado español.</p>
+</footer>
+
+</body>
+</html>
