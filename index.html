@@ -416,11 +416,15 @@
         <div class="hero-tag" style="margin:0 auto 1.5rem;">📬 Newsletter semanal</div>
         <h2>Finanzas útiles,<br/>una vez a la semana</h2>
         <p>Cada domingo: una idea accionable sobre ETFs, fiscalidad o brokers. Sin spam, sin rollos. Solo lo que sirve.</p>
-        <div class="newsletter-form">
-          <input type="email" placeholder="tu@email.com" />
-          <button class="btn-primary" onclick="this.textContent='✓ Apuntado'">Apuntarme gratis</button>
-        </div>
-        <p style="font-size:0.72rem; color:var(--muted); margin-top:1rem;">+1.200 inversores ya suscritos. Baja cuando quieras.</p>
+        <form id="sib-form" method="POST" action="https://fd128183.sibforms.com/serve/MUIFAF_itoSXaA9bxhJ9aJLmgdAbjTnTEB_L8pv9sMjJdIM5nRaeBcK9vk61VV3-Hc8DBMw7BWhugMffuVuzYdlRntBWyksLAThD7vCSBnpqcIc4DHtgA6BgsnytYoRGAiUWW5kxwFyRmed7RG084tV3-cJjUjk7PCkSk2i_UXDpyreR6sM4t2cVZWiPFldFyrAc8K_x9BkoKdEn2g==" style="display:flex; gap:0.75rem; flex-wrap:wrap; justify-content:center;">
+          <input type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="tu@email.com" required
+            style="flex:1; min-width:240px; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:0.8rem 1.2rem; color:var(--text); font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none;" />
+          <input type="text" name="email_address_check" value="" style="display:none;">
+          <input type="hidden" name="locale" value="es">
+          <input type="hidden" name="html_type" value="simple">
+          <button type="submit" class="btn-primary">Apuntarme gratis</button>
+        </form>
+        <p style="font-size:0.72rem; color:var(--muted); margin-top:1rem;">Sin spam. Baja cuando quieras.</p>
       </div>
     </div>
   </section>
